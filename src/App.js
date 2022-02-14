@@ -1,6 +1,6 @@
 import React from "react";
 import Stepper from "./components/Stepper/Stepper";
-import { ProductInformation } from "./views/ProductInformation/ProductInformation"
+import ProductInformation from "./views/ProductInformation/ProductInformation"
 import FormPassword from "./views/FormPassword/FormPassword"
 import Feedback from "./views/Feedback/Feedback"
 import { useState } from "react";

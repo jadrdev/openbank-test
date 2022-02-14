@@ -7,7 +7,7 @@ import mindImage from "../../assets/img/group.svg";
 import safeImage from "../../assets/img/group-3.svg";
 import InfoSnippet from "../../components/InfoSnippet/InfoSnippet";
 
-export const ProductInformation = () => {
+export default function ProductInformation() {
     return (
         <div className="ProductInformation">
             <div className="first-two-info-snippets">
