@@ -1,6 +1,6 @@
 import React from "react";
-import ProductInformation from "./views/ProductInformation/ProductInformation";
 import Stepper from "./components/Stepper/Stepper";
+import { ProductInformation } from "./views/ProductInformation/ProductInformation"
 import { useState } from "react";
 import "./App.scss";
 

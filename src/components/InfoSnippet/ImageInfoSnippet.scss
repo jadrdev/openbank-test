@@ -1,0 +1,10 @@
+@import "./InfoSnippet.scss";
+
+.ImageInfoSnippet {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 30px;
+}

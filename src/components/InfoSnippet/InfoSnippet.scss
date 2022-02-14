@@ -1,0 +1,18 @@
+@import "../../styles/base";
+
+.InfoSnippet {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 0.8em;
+  color: $secondary-color;
+  .label {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+}
+
+.info-snippet {
+  font-weight: 500;
+  color: $secondary-color;
+}

@@ -1,0 +1,14 @@
+@import "../../styles/base";
+
+.ProductInformation {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+  height: 100%;
+  .first-two-info-snippets {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
