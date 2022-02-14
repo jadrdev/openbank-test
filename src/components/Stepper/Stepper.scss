@@ -1,0 +1,63 @@
+@import "../../styles/base";
+
+$inactive-color: #647b88;
+$active-color: #0b2035;
+$background-color: #c1cbd2;
+$steps-container-height: 75px;
+
+.Stepper {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  .steps-container {
+    position: relative;
+    height: $steps-container-height;
+    min-height: $steps-container-height;
+    width: 100%;
+    background-color: $background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .step-separator {
+    width: 30px;
+    height: 3px;
+    background-color: $inactive-color;
+  }
+  div[class*="step-indicator"] {
+    background-color: $inactive-color;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 1.05em;
+    font-weight: 450;
+    width: 8px;
+    height: 8px;
+    padding: 8px;
+  }
+  .step-indicator-active {
+    background-color: $active-color !important;
+    width: 12px !important;
+    height: 12px !important;
+    padding: 11px !important;
+  }
+  .passed {
+    background-color: #d40039 !important;
+  }
+  .pointer {
+    position: absolute;
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $white;
+  }
+}
