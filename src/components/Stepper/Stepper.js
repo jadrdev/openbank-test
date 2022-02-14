@@ -7,11 +7,12 @@ import { useGetPointerLeftPositionOnStepChange } from "../../hooks/useStepper";
 import "./Stepper.scss";
 
 export default function Stepper(props) {
+  const {steps, activeStepIndex} = props
   const indicatorRefs = useMemo(() => {
-    return props.steps.map(() => createRef());
-  }, [props.steps]);
+    return steps.map(() => createRef());
+  }, [steps]);
   const pointerLeftPosition = useGetPointerLeftPositionOnStepChange(
-    indicatorRefs[props.activeStepIndex]
+    indicatorRefs[activeStepIndex]
   );
   return (
     <div className="Stepper">
