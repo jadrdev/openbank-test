@@ -1,28 +1,68 @@
 
 @import "styles/base";
 
+$vertical-padding: 1rem;
+$horizontal-padding: 4rem;
+
 .App {
-  &-header{
-    &-logo{
-     max-width: 80px;
+  .modal-container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(187, 187, 187, 0.404);
+    .modal {
+      height: 90%;
+      width: 90%;
+      .content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background-color: $white;
+        box-sizing: border-box;
+        padding-left: $horizontal-padding;
+        padding-right: $horizontal-padding;
+        padding-top: $vertical-padding;
+        padding-bottom: $vertical-padding;
+        .title-divider {
+          width: 40px;
+          height: 6px;
+          background-color: #3ab6d7;
+        }
+        .form {
+          box-sizing: border-box;
+          padding-top: 4em;
+          width: 100%;
+          height: 100%;
+          overflow: scroll;
+        }
+      }
     }
   }
-  &-content{
-    padding: 1rem 4rem;
-    h3{
-      color: $primary-color;
-    }
-    p{
-      color: $secondary-color;
-    }
-    .bye-bye{
-      margin: 4rem 0 0;
-      text-align: center;
-      background: $terciary-color;
-      border: 1px solid #ddd;
-      color: #ababab;
-      padding: 1rem;
-      border-radius: 4px;
-    }
+  .bottom-control-buttons-divider {
+    width: calc(100% + 2 * #{$horizontal-padding});
+    height: 2px;
+    margin-left: -$horizontal-padding;
+    background-color: rgba(141, 139, 139, 0.123);
+  }
+  .bottom-control-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: $vertical-padding;
+    height: 90px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  h2 {
+    color: $secondary-color;
+    margin-bottom: 0.4em;
+    font-size: 1.6em;
+    font-weight: bold;
   }
 }
+
+
