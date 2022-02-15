@@ -17,24 +17,24 @@ Ejecutar uno de los siguiente comando
 Tras terminar la instalación de los node_modules, lanzar el proyecto en la consola a través del siguiente comando
 > yarn start o npm run start
 
-### Paginas de la Aplicación
+### Páginas de la Aplicación
 
 ## Presentación
-![Presentación](/src/views/ProductInformation/step1.png "Presentación").
+![Presentación](/src/views/ProductInformation/step1.png "Presentación")
 
 ## Petición de la contraseña
-![Petición de la contraseña](/src/views/FormPassword/step2.png "Petición de la contraseña").
+![Petición de la contraseña](/src/views/FormPassword/step2.png "Petición de la contraseña")
 
 ## Resultados del cambio 
 
 **Confirmación**
 --
-![Confirmación del cambio de contraseña](/src/views/Feedback/success.png "Confirmación del cambio de contraseña").
+![Confirmación del cambio de contraseña](/src/views/Feedback/success.png "Confirmación del cambio de contraseña")
 
 **ERROR**
 --
 
-![Error de cambio de contraseña](/src/views/Feedback/error.png "Error de cambio de contraseña"). 
+![Error de cambio de contraseña](/src/views/Feedback/error.png "Error de cambio de contraseña")
 
 ### `Test Unitarios`
 
