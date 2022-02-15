@@ -1,0 +1,21 @@
+@import "../../styles/base";
+
+.CenteredAlert {
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: rgba($light-grey, 0.6);
+  z-index: 9999;
+  .content-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+  }
+}

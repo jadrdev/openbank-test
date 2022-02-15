@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-import { useUpdateScoreOnPasswordChange } from "./PasswordValidationInput.hooks";
+import { useValidarPass } from "../../hooks/useValidarPass";
 import {
   getBackgroundColor,
   getFontSize,
-} from "./PasswordValidationInput.utils";
+} from "../../utils/passwordUtils/passwordUtils"
 import "./PasswordValidationInput.scss";
 import showEyeIcon from "../../assets/icons/show-eye.svg";
 import hideEyeIcon from "../../assets/icons/hide-eye.svg";
@@ -12,7 +12,7 @@ import hideEyeIcon from "../../assets/icons/hide-eye.svg";
 export default function PasswordValidationInput(props) {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   const { style, setPasswordScore, ...otherProps } = props;
-  const score = useUpdateScoreOnPasswordChange(otherProps.value);
+  const score = useValidarPass(otherProps.value);
   return (
     <div className="PasswordValidationInput">
       <input
