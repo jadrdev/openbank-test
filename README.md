@@ -31,9 +31,10 @@ Tras terminar la instalación de los node_modules, lanzar el proyecto en la cons
 --
 ![Confirmación del cambio de contraseña](/src/views/Feedback/success.png "Confirmación del cambio de contraseña").
 
-**Negación**
+**ERROR**
 --
-![Confirmación del cambio de contraseña](/src/views/Feedback/error.png" Error del cambio de contraseña").
+
+![Error de cambio de contraseña](/src/views/Feedback/error.png "Error de cambio de contraseña"). 
 
 ### `Test Unitarios`
 
